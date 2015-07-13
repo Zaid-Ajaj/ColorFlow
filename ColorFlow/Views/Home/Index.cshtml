@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Color Flow - Home";
+}
+
+<style>
+   
+</style>
+@section scripts
+{
+    <script type="text/javascript" src="/JavaScript/index.js"></script>
+}
+<h2>Home</h2>
+<table>
+    <tr>
+        <td><p id="btnUpload" class="button" >Choose File</p></td>
+        <td><p id="txtFileName">Supported file types: jpg, jpeg, bmp or png.</p></td>
+    </tr>
+    <tr>
+        <td><p id="btnSubmit" class="button" >Preview</p></td>
+        <td><p id="txtStatus"></p></td>
+    </tr>
+</table>
+@using (Html.BeginForm("view", "Home", FormMethod.Post, new { enctype="multipart/form-data", id="form1"}))
+{
+    <input type="file" name="file" id="file" />
+}
+
+
+

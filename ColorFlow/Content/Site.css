@@ -1,0 +1,70 @@
+﻿body 
+{
+    padding:0px;
+    margin:0px;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    background-image: url("../Images/bg.jpg")
+}
+h2{ color:White; }
+
+#txtFileName,#txtStatus
+{
+    color:White;
+    font-size:20px;
+}
+.button
+{
+    text-align:center;
+    margin:5px;
+    color:White;
+    background-color: rgba(0,0,0,0.5);
+    padding:10px;
+    font-size:24px;
+    border-radius:15px;
+    cursor:pointer;
+    box-shadow: 0px 0px 15px beige;
+}  
+.button:hover
+{
+    box-shadow: 0px 0px 15px skyblue;
+    background-color:  rgba(0,0,0,0.75);
+}
+html
+{
+    margin:0px;
+    padding:0px;
+}
+
+#main 
+{ 
+    padding:20px;
+    opacity:0;
+}
+
+td { padding:10px; }
+#header 
+{ 
+    background:rgba(0,0,0,0.5);
+    box-shadow:0px 0px 20px black;
+}
+
+#title,#sepr
+{
+    font-size:30px;
+    font-family:Segoe Script;
+    color:White;
+}
+a
+{
+    text-decoration:none;
+    font-size:20px;
+    color:White;
+    cursor:default;
+}
+a:hover
+{
+    color:Darkgray;
+    cursor:pointer;
+}
+
+

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="icon"  href="/Content/fav.ico" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="header">
+        <table >
+            <tbody>
+                <tr>
+                    <td><img alt="logo" src="/Images/logo.png" width="60" /></td>
+                    <td><p id="title"> ColorFlow </p></td>
+                    <td><p id="sepr"> | </p></td>
+                    <td class="linkTD" >@Html.ActionLink("Home","Index","Home")</td>
+                    <td class="linkTD" >@Html.ActionLink("About","About","Home")</td>
+                    <td class="linkTD" >@Html.ActionLink("Contact","Contact","Home")</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="main">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript" src="/JavaScript/layout.js"></script>
+</body>
+</html>
